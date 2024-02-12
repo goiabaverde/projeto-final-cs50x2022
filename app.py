@@ -11,6 +11,7 @@ app.secret_key = secrets.token_urlsafe(16)
 
 db = cs50.SQL("sqlite:///users.db")
 
+# Register route
 @app.route("/register", methods=["POST", "GET"])
 def register():
     con=sqlite3.connect("users.db")
@@ -38,7 +39,7 @@ def register():
     elif request.method == 'GET':
         return render_template("register.html")
     
-
+# Login route
 @app.route("/login", methods=["POST", "GET"])
 def login():
     if request.method == "POST":
@@ -64,7 +65,8 @@ def login():
             return render_template('index.html', na = na)
     elif request.method == "GET":
         return render_template("login.html")
-
+    
+# Logout route
 @app.route("/logout", methods=["POST", "GET"])
 def logout():
     #end a session
@@ -81,7 +83,7 @@ def home():
     return render_template("index.html")
    
 
-
+# Results route
 @app.route("/results", methods=["POST", "GET"])
 def results():
     if request.method=="POST":
@@ -99,6 +101,8 @@ def results():
             return render_template("results.html", na = na)
     else:
         return render_template("results.html")
+    
+# Delete element from the db route
 @app.route("/delete", methods=["POST", "GET"])
 def delete():
     if request.method == "POST":
@@ -114,7 +118,8 @@ def delete():
             der.close()
     elif request.method == "GET":
         return render_template("historic.html")
-        
+
+# Explanatanion route      
 @app.route("/explanation")
 def explanation():
     if request.method == "GET":
@@ -122,7 +127,7 @@ def explanation():
     else:
         return render_template("fail.html")
 
-
+# Get the historic route 
 @app.route("/historic")
 def historic():
     if request.method == "GET":
