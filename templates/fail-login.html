@@ -1,0 +1,17 @@
+{% extends "login_re.html" %}
+
+{% block title %}
+    Error 
+{% endblock %}
+
+{% block content %}
+<main>
+    <h1>Error</h1>
+    <main id="erro">
+        <div id="error">
+            <p>User or Password are wrong, check and try again</p>
+            <p> Maybe you do not hava a accont<a href="{{url_for('register')}}"> Click here to create a accont</a></p>
+        </div>
+    </main>
+</main>
+{% endblock %}

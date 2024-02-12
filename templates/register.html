@@ -1,0 +1,20 @@
+{% extends "login_re.html" %}
+
+{% block title %}
+    Register     
+{% endblock %}
+
+{% block content %}
+<main class="regiser">
+    <h1>Register</h1>
+        <form action="/register" method="post" class="form-box">
+                <div id="inputs">
+                    <input type="text" name="name" placeholder="Username" required class="input-field">
+                    <input type="password" name="password" placeholder="Password" required class="input-field">
+                    <input type="password" name="conpassword" placeholder="Confirm Password" required class="input-field">
+                </div>
+            <input type="submit" value="Register" class="button-box" >
+            <img src="../static/imagens/Calculator-rafiki.png" alt="calculator" id="img">
+        </form>
+</main>
+{% endblock %}

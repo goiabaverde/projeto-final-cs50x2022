@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="shortcut icon" href="../static/imagens/icons8-math-book-ios-16-filled-32.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>
+        {% block title %}
+        
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <img src="../static/imagens/bars.png" alt="bars" class="check">
+                    </label>
+                   <a href="/"><img src="../static/imagens/calculator3.0.png" alt="calculator" id="logo"></a>
+                    <ul>
+                     <li><a href="/historic" id="his">Historic</a></li>
+                     <li><a href="/logout">Log Out</a></li>
+                     <li></li>
+                    </ul>
+            </nav>
+        </header>
+    </div>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

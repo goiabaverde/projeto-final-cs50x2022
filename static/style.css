@@ -1,0 +1,433 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'); 
+ @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+ html
+ {
+    margin: 0;
+ }
+ *
+ {
+    margin: 0;
+ }
+
+body
+{
+    background-color: #eee;
+    background-attachment: fixed;
+}
+#cont
+{
+    padding: 1.5rem;
+}
+main{
+    padding: 1rem;
+    width: 600px;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 4px black;
+
+}
+
+.checkbtn
+{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 120px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.check
+{
+    height: 30px;
+}
+#check
+{
+    display: none;
+}
+
+@media (max-width: 680px)
+{
+    nav{
+        height: 600px;
+    }
+    main
+    {
+        width: 400px;
+
+    }
+    #img-rainbow
+    {
+        width: 300px;
+        margin-right: 200px;
+    }
+    body{
+        width: 600px;
+        overflow-x: hidden;
+    }
+    html{
+        width: 610px;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 640px)
+{
+    html ,body{
+        margin-right: 0px;
+        width: 500px;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 460px)
+{
+    nav{
+        width: 400px;
+    }
+    main
+    {
+        width: 300px;
+    }
+    #img-rainbow
+    {
+        width: 300px;
+        margin-right: 305px;
+    }
+    body, html{
+        width: 400px;
+        overflow-x: hidden;
+    }
+    .td
+    {
+
+        padding: 0px;
+        width: 1px;
+    }
+    .th, #date{
+        padding: 0px;
+        width: 10px;
+    }
+    table{
+        width: 250px;
+    }
+    .checkbtn
+    {
+        display: block;
+        margin-right: 20px;
+    }
+    ul{
+        position: fixed;
+        width: 389px;
+        height: 100%;
+        top: 115px;
+        left: 100%;
+        background-color: #2e1d5a;
+        left: -150%;
+        text-align: center;
+        transition: all .5s;
+
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #study
+    {
+        font-size: 0.8rem;
+        padding-left: 0px;
+    }
+    #imagem
+    {
+        height: 100px;
+        width: 200px;
+    }
+    li{
+        font-size: 0.8rem;
+    }
+    ul{
+        padding-left: 0;
+    }
+    body{
+        width: 440px;
+        overflow-x: hidden;
+    }
+}
+@media (max-width: 340px)
+{
+    html{
+        width: 300px;
+    }
+    body{
+        margin-left: 0;
+        width: 310px;
+        overflow-x: hidden;
+        margin-right: 0px;
+    }
+    p{
+        font-size: 0.8rem;
+        padding-left: 1px;
+    }
+    nav ul
+    {
+        width: 308px;
+    }
+    ;
+
+}
+
+h1
+{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 1rem;
+}
+
+h2
+{
+    margin: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Bitter', serif;
+}
+
+p
+{
+    margin: 2px;
+    font-family: 'Rubik', 'calibri', sans-serif;
+}
+
+h3
+{
+    font-family: 'Rubik', 'calibri', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+input
+{
+    
+    border-radius: 4px;
+    display: grid;
+    color: white;
+    background-color: gray;
+}
+
+#in
+{
+    color: black;
+    border: 0;
+    border-bottom: 1px solid #999;
+    background-color: transparent;
+    outline: none;
+}
+
+#bo, #h
+{
+    background-color: #5434af;
+    cursor: pointer;
+    margin-top: 1rem;
+    height: 30px;
+    width: auto;
+    border-radius: 10px;
+}
+
+#bo
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#hf
+{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ul
+{
+    list-style: none;
+}
+
+li
+{
+    font-family: 'Rubik', 'calibri', sans-serif;
+    font-weight: bold;
+}
+#study
+{
+    /*align-items: center;-->
+    justify-content: center;*/
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 450px;
+}
+#study li
+{
+    margin-top: 5px;
+}
+#rainbow
+{   
+    width: 405px;
+    height: 228px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 1rem;
+    margin-left: 100px;
+}
+
+#imagem
+{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+
+nav {
+    padding-left: 10px;
+    top: 10px;
+	background: #5434af;
+	height: 120px;
+	width: 100%;
+}
+
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a {
+    line-height: 120px;
+    text-decoration: none;
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+#logo {
+    width: 70px;
+    height: 80px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.content-table
+{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1rem;
+    min-width: 400px;
+}
+
+.content-table tbody tr
+{
+    border-bottom: 1px solid #dddddd;
+}
+
+#date
+{
+    margin-left: 10px;
+}
+
+#table
+{
+    display: flex;
+    justify-content: center;
+}
+thead
+{
+    border-radius: 10px;
+    background-color: #5434af;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+th, td
+{
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Rubik', 'calibri', sans-serif;
+    margin: 10px 10px;
+    padding: 12px 15px;
+}
+
+#left
+{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#right
+{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+tbody tr
+{
+    border-bottom: 1px solid black;
+}
+
+form#fo
+{
+    
+    padding: 1rem;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 100px 80px;
+    grid-template-rows: 20px 20px 20px 20px;
+    grid-row-gap: 7px;
+}
+
+.image
+{
+    width: 160px;
+    height: 150px;
+    margin-left: 50px;
+}
+

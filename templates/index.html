@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}
+    Quadratic function calculator      
+{% endblock %}
+
+{% block body %}
+<main>
+   
+    <h1>Quadratic function calculator</h1>
+    <h2>Second degree equation</h2>
+    <p>The second degree equation is an equation that envolves a second degree trinomial, so  this is a equation with 3 terms and one of them has a element squared (thats is why the equation is called quadratic)</p>
+    <p><i>ax² + bx + c</i> is the base form, which a, b and c are constants and all of them are real numbers.</p>
+    <h2>The nature and the parabolic form</h2>
+    <p>A quadratic function graph generates mathematical figure called <i>parabola</i> and in the world that's a lot of things that this function can desbribed, one of the examples is the rainbow. If you and some explanation about the quadratic funciton, <a href="/explanation">click here.</a></p>
+    <div id="rainbow"><img src="../static/imagens/rainbow-p.png" alt="rainbow" id="img-rainbow"></div>
+    <!--Jesse Gardner/Unsplash credits for the photo-->
+    <h3>Type down below the values for a, b and c constants of a quadratic function</h3>
+    <form action="/results" method="post" id="fo" >
+        <label for="a">Constant <strong>a</strong>:</label>
+        <input type="number" name="a" id="in" class="a" a autocomplete="off" autofocus a = "a" step="any" placeholder="a value">
+        <label for="b">Constant <strong>b</strong>:</label>
+        <input type="number" name="b" id="in" class="b"  autocomplete="off" autofocus b = "b" step="any" placeholder="b value">
+        <label for="c">Constant <strong>c</strong>:</label>
+        <input type="number" name="c" id="in" class ="c" autocapitalize="off" autofocus c = "b" step="any" placeholder="c value">
+        <input type="submit" value="Calculate" id="bo">
+    </form>
+    
+</main>
+<footer>
+
+</footer>
+<script src="../static/math.js"></script>
+
+<!--'<img src="imagens/raiz negatica, a positivo, b negativo, c positivo.png" alt="graphic">''-->
+{% endblock %}
+
+
